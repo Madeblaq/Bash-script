@@ -1,0 +1,4 @@
+subomi;sudo,dev,www-data
+chukwu;dev,www-data
+tolani;sudo
+hassan;sudo,www-data
