@@ -26,80 +26,71 @@ This repository contains a Bash script, `create_users.sh`, designed to automate 
 ## Getting Started
 
 ### 1. Clone the Repository
-
 ```sh
+
 git clone https://github.com/your-username/your-repository.git
 cd your-repository
+```
 
+### 2. Prepare the Input File 
 
-## Prepare the input file 
-
-Create an input file named 'input_file.txt' with the following format:
+Create an input file named `input_file.txt` with the following format:
 
 ```sh
 username1; group1, group2, group3
 username2; group1, group2
 username3; group3
+```
 
-
-##Example
+#### Example
 
 ```sh
 chukwu; sudo, dev, www-data
 tolani; sudo
 hassan; dev, www-data
+```
 
+### 3. Upload Script and Input File to Mobaxterm
 
-##Upload Script and input file to Mobaxterm
+Upload the `create_users.sh` script and `input_file.txt` using the upload feature of MobaXterm:
 
--*Upload the create_users.sh script and input_file.txt using the upload feature of MobaXterm:
+- Open MobaXterm.
+- Navigate to the directory where your repository is cloned.
+- Use the upload feature to upload `create_users.sh` and `input_file.txt` to the current directory in MobaXterm.
 
--Open MobaXterm.
--Navigate to the directory where your repository is cloned.
--Use the upload feature to upload create_users.sh and input_file.txt to the current directory in MobaXterm.
+### 4. Convert Line Endings and Make the Script Executable
 
-
-##Convert Line Endings and make the script Executable
-
-Connect to your remote server using mobaxterm ssh session and navigate to repository directory:
+Connect to your remote server using MobaXterm SSH session and navigate to the repository directory:
 
 ```sh
 dos2unix create_users.sh
 chmod +x create_users.sh
+```
 
-
-
-##Run the script
+### 5. Run the Script
 
 Execute the script with sudo on your remote server:
 
 ```sh
 sudo ./create_users.sh input_file.txt
+```
 
+## Logs and Passwords
 
+- **Logs File**: `/var/log/user_management.log`
+- **Passwords File**: `/var/secure/user_passwords.txt`
 
-##Logs and Passwords
+## Learn More About HNG Internship
 
--logs File:
-'/var/log/user_management.log'
--Passwords File 
-'/var/secure/user_passwords.txt'
+This project is part of the HNG Internship, a program designed to develop and mentor software developers. You can learn more about hiring from the HNG Internship [here](https://hng.tech) or explore the premium services [here](https://hng.tech/services).
 
-
-
-##Learn More About HNG internship
-
-This project is part of the HNG Internship, a program designed to develop and mentor software developers. You can learn more about hiring from the HNG Internship here or explore the premium services here.
-
-
-
-##Contributing
+## Contributing
 
 Contributions are welcome! Please fork this repository and submit pull requests for any improvements or fixes.
 
+## Contact
 
-##Contact
-For any questions or suggestions, please open an issue or contact us at[madeblaq@gmail.com]
-
+For any questions or suggestions, please open an issue or contact us at [madeblaq@gmail.com].
 
 This project was created by Orisadare Damilola Racheal as part of the HNG Internship program.
+```
